@@ -1,0 +1,59 @@
+//COMANDOS ESENCIALES ACTUALIZACION DEFINITIVA
+
+git --version                        // Ver la versión actual de Git
+cmdkey /l                            // Ver credenciales guardadas en Windows
+cmdkey /delete:git:https://github.com // Eliminar credenciales de GitHub
+
+git init                             // Iniciar un nuevo repositorio
+git config --global user.name "TuNombre"     // Crear o cambiar nombre de usuario global
+git config user.name                         // Ver el usuario actual
+git config --global user.email "tu@correo.com" // Asignar correo global
+git config user.email                        // Ver el correo actual
+git config --list                            // Ver toda la configuración actual de Git
+
+git branch -M main                  // Cambiar nombre de rama a "main"
+git status                          // Ver el estado de los archivos
+git add .                           // Preparar todos los cambios para el commit
+git add nombre_archivo.txt          // Añadir un archivo específico
+git commit -m "Primer versión"      // Guardar los cambios localmente con un mensaje
+git log                             // Ver historial de commits
+git show                            // Mostrar detalles del último commit
+git diff                            // Ver los cambios no confirmados
+
+git remote add origin https://github.com/usuario/repositorio.git // Conectar repo local con GitHub
+git remote -v                       // Ver los repositorios remotos configurados
+git push -u origin main             // Subir los cambios a la rama principal
+git push                            // Subir commits futuros al remoto
+git pull                            // Traer y fusionar los cambios del remoto
+git fetch                           // Traer cambios sin fusionarlos aún
+git merge nombre_rama               // Fusionar una rama con la actual
+
+git add README.md                   // Añadir descripción del proyecto
+git clone https://github.com/usuario/repositorio.git // Clonar un repositorio remoto
+
+git branch                          // Listar ramas locales
+git branch nombre_rama              // Crear una nueva rama
+git checkout nombre_rama            // Cambiar a otra rama
+git checkout -b nombre_rama         // Crear y cambiar a una nueva rama
+git branch -d nombre_rama           // Borrar una rama local
+git push origin --delete nombre_rama // Borrar una rama remota
+
+git reset --soft HEAD~1             // Deshacer último commit (manteniendo cambios)
+git reset --hard HEAD~1             // Deshacer último commit y borrar cambios
+git restore nombre_archivo.txt      // Restaurar archivo modificado
+git clean -fd                       // Eliminar archivos no rastreados
+
+git stash                           // Guardar temporalmente los cambios sin hacer commit
+git stash pop                       // Recuperar los cambios guardados
+git stash list                      // Ver lista de stashes guardados
+
+git tag                             // Ver etiquetas existentes
+git tag -a v1.0 -m "Versión 1.0"    // Crear etiqueta con mensaje
+git push origin v1.0                // Subir etiqueta al remoto
+
+git rm nombre_archivo.txt           // Eliminar archivo del repositorio y del disco
+git mv archivo_viejo.txt archivo_nuevo.txt // Renombrar/mover archivo
+
+git blame nombre_archivo.txt        // Ver quién modificó cada línea de un archivo
+git reflog                          // Ver historial completo de cambios y referencias
+git remote set-url origin https://github.com/usuario/nuevo-repo.git // Cambiar URL del remoto
