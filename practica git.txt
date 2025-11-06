@@ -1,4 +1,4 @@
-//COMANDOS ESENCIALES ACTUALIZACION DEFINITIVA
+//COMANDOS ESENCIALES ACTUALIZACION DEFINITIVA 2.0
 
 git --version                        // Ver la versión actual de Git
 cmdkey /l                            // Ver credenciales guardadas en Windows
